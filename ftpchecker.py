@@ -12,7 +12,7 @@ def send_email():
     EMAIL_CONTENT = 'This is the content of the email'
     try:
         #initializing the server connection
-        yag = yagmail.SMTP(user=USER, password=PASS')
+        yag = yagmail.SMTP(user=USER, password=PASS)
         #sending the email
         yag.send(to=TO_EMAILS, subject=SUBJECT, contents=EMAIL_CONTENT)
         print("Email sent successfully")
