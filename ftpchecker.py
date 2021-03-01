@@ -32,7 +32,7 @@ def check_ftp_for_file(t):
     ftps = FTP_TLS(FTP_SERVER)
     try:
         ftps.login(USER, PASS)
-        ftps.prot_p()  # switch to secure data connection. Otherwise, only the user and password is encrypted and not all the file data.
+        ftps.prot_p()  # switch to secure data connection. Otherwise, only the user and password is encrypted, this way file data is also encrypted
         ftps.cwd(DIR)
         size = ftps.size(FILE_NAME)
         if prev_file_size != size:
