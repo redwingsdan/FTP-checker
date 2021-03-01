@@ -1,0 +1,12 @@
+[email-config]
+username= gmailacct@gmail.com
+password= gmailacctpassword
+to_emails= toaddress@address.com,othertoaddress@secondaddress.com
+
+[ftp-config]
+servername= ftp.pureftpd.org
+username= ftp user
+password= ftp pass
+directory= file/dir/path
+filename= file.txt
+scheduler_minutes= 1
